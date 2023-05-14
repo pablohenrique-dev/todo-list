@@ -1,20 +1,16 @@
 <template>
   <main>
-    <h1>TODOLIST</h1>
-    <ToDoList />
+    <h1>TODOLIST V1.0</h1>
+    <!-- <ToDoList /> -->
+    <ToDoListCopy />
     <span class="direitos">© 2023 - Todos os direitos reservados</span>
   </main>
 </template>
 
-<script>
-import ToDoList from "./components/ToDoList.vue";
+<script setup>
+// import ToDoList from "./components/ToDoList.vue";
+import ToDoListCopy from "./components/ToDoListCopy.vue";
 
-export default {
-  name: "App",
-  components: {
-    ToDoList,
-  },
-};
 </script>
 
 <style>
@@ -42,10 +38,8 @@ h1 {
 .direitos {
   display: block;
   margin-top: 24px;
+  margin-bottom: 24px;
   color: #687078;
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  right: 0;
+  
 }
 </style>
